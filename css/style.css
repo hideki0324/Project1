@@ -109,7 +109,7 @@ input[type=submit],input[type=button]{
 	color: #fff;
 	padding: 16px;
 	border-radius: 999px;
-	width: 280px;
+	width: 280px !important;
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -716,29 +716,56 @@ ul.locations-list li:last-of-type {
 }
 
 .contact-list {
-	/*width: 90%;*/
+	width: 60%;
 	margin: 50px auto 60px;
-	background: red;
+	background: #fff;
 	padding: 50px 0;
 	border:solid 2px #141B35;
 	border-radius: 10px;
 }
 
+.contact-form{
+	width: 96%;
+	padding: 60px 0;
+	margin: 0 2%;
+}
 
+.table-res-form{
+	width: 100%;
+}
+/*一行ごとに上ボーダー*/
+.table-res-form tr {
+    border-top: 1px #DDD solid;
+}
+
+/*thとtd内の余白指定*/
+.table-res-form th, .table-res-form td {
+    padding: 1.5em;
+}
+/*th（項目欄）は30%幅、テキストを右寄せ*/
+.table-res-form th {
+    width: 30%;
+    text-align: right;
+}
+/*.contact-list ul li{
+	list-style-type: none;
+	display: block;
+	float: left;
+}
+*/
 .contact-list span{
+	text-align: left;
 	margin: 15px auto 40px auto;
 	color: #000;
 }
 
-.contact-form{
-	width: 96%;
-	padding: 90px 0;
-	margin: 0 2%;
-}
-
-.contact-form input{
+.contact-form input {
+	width: 383px;
 	margin: 18px auto;
-	border: solid;
+	border: solid 1px;
+}
+.contact-form input .button-custom{
+	width: 280px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -792,7 +819,7 @@ footer .footer-links a {
 }
 
 footer .footer-links a:hover {
-	color: #141B35;
+	color: #fff;
 }
 
 footer .footer-links a:first-of-type {
